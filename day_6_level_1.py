@@ -1,33 +1,22 @@
-empty_tuple = tuple()
+# 1. Crear una tupla vacía
+empty_tuple = ()
+print("Tupla vacía:", empty_tuple)
 
-brotherstpl = ('Erick', 'Alejandro', 'Pedro', 'Daniel', 'Rene', 'Sergio' )
-sisterstpl = ('Cinthya', 'Karen', 'Pilar')
+# 2. Crear tuplas de hermanos y hermanas
+brothers = ('Juan', 'Carlos', 'Miguel')
+sisters = ('Ana', 'María', 'Lucía')
+print("Hermanos:", brothers)
+print("Hermanas:", sisters)
 
-siblingstpl = brotherstpl + sisterstpl
-print(siblingstpl)
+# 3. Unir las tuplas en siblings
+siblings = brothers + sisters
+print("Todos los hermanos:", siblings)
 
-print('Tengo ', len(siblingstpl), ' hermanos y hermanas en total')
+# 4. Contar cuántos hermanos hay
+num_siblings = len(siblings)
+print("Número de hermanos:", num_siblings)
 
-parentstpl = ('Hector', 'Candy')
-family_memberstpl = siblingstpl + parentstpl
-print(family_memberstpl)
-del family_memberstpl
-
-fruitptl = ('Strawberry', 'Banana', 'Mango', 'Pineapple', 'Apple', 'Orange')
-vegetablestpl = ('Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot')
-animalProductstpl = ('Jam', 'Sausage', 'Milk', 'Chesse', 'Cream', 'Meat')
-
-foodStuffTpl = fruitptl + vegetablestpl + animalProductstpl
-
-print(foodStuffTpl[0:8] + foodStuffTpl[9:])
-print(foodStuffTpl[3:-3])
-
-del foodStuffTpl
-print ('La fruta banana esta en el tuple (Fruits)? ','Banana' in fruitptl)
-
-nordicCountries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
-
-print('Estonia es un pais Nordico? ', 'Estonia' in nordicCountries)
-print('Iceland es un pais Nordico? ', 'Iceland' in nordicCountries)
-#REVISADO
-print("Revisado")
+# 5. Modificar siblings y añadir padres
+parents = ('Pedro', 'Laura')
+family_members = siblings + parents
+print("Miembros de la familia:", family_members)
